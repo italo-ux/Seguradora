@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+</head>
+</body>
+    <div class="container">
+
+    <img src="ChatGPT_Image_16_de_abr._de_2025__23_10_36-removebg-preview.png" alt="">
+
+
+
+    <form id="formSeguro"> 
+
+        <label><strong>Nome do Segurado:</strong><br>
+            <input type="text" id="nome" placeholder="Digite seu nome" required> 
+        </label> <br><br>
+
+        <label> <strong>Idade:</strong> <br>
+            <input type="number" id="idade" placeholder="Digite sua idade" required> 
+        </label> <br><br>
+
+        <label><strong>Estado Civil:</strong> <br>
+            <select id="estadoCivil">
+                <option value="solteiro">Solteiro</option> 
+                <option value="casado">Casado</option> 
+            </select> 
+        </label> <br><br>
+
+        <label><strong>Motoristas Adicionais:</strong> <br>
+            <input type="number" id="motoristasAdicionais" value="0" min="0" placeholder="Digite o número de motoristas" required> 
+        </label> <br><br>
+
+        <label><strong>Nome do Veículo:</strong> <br>
+            <input type="text" id="veiculo" placeholder="Digite o nome do veículo" required> 
+        </label> <br><br>   
+
+        <label><strong>Classe do Veiculo: </strong><br>
+            <select id="classeVeiculo"> 
+                <option value="A">Classe A</option>
+                <option value="B">Classe B</option> 
+                <option value="C">Classe C</option> 
+            </select> 
+        </label> <br><br>
+
+        <button type="button" onclick="calcularSeguro()">Calcular Seguro</button> 
+    </form> <br>
+    <h3>Resultado:</h3> 
+
+    <p id="resultado"></p> 
+
+</div>
+</body> 
+</html>
